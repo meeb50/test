@@ -17,12 +17,12 @@ body {
     display: table;
 }
 
-.section {
+section {
     float: left;
     width: 70%;
 }
 
-.aside {
+aside {
     float: left;
     padding-left: 20px;
     width: 30%;
@@ -30,13 +30,13 @@ body {
 
 /* Header */
 
-.header {
+header {
     padding: 30px;
     text-align: center;
     background-color: #fff;
 }
 
-.header h1 {
+header h1 {
     font-size: 50px;
 }
 
@@ -44,7 +44,8 @@ body {
 .navbar {
     overflow: hidden;
     background-color: #333;
-    display: flex;             /* Activamos flexbox */
+    display: flex;
+    /* Activamos flexbox */
     justify-content: center;
 }
 
@@ -72,13 +73,26 @@ body {
     text-align: justify;
 }
 
-.picture {
-    border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.btn {
+    color: #000;
+    background-color: #aaa;
+    border: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
 }
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #01862d;
+}
+
 
 /* Footer */
 footer {
@@ -88,25 +102,92 @@ footer {
     margin-top: 20px;
 }
 
+/* Tablas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Imagenes */
+
+.picture {
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* formulario */
+
+form {
+  max-width: 400px;       /* ancho máximo */
+  margin-top: 20px;      /* centrado en la página */
+  padding: 20px;
+  background: #f9f9f9;    /* fondo suave */
+  border: 1px solid #ddd; /* borde sutil */
+  border-radius: 8px;     /* esquinas redondeadas */
+  font-family: Arial, sans-serif;
+}
+
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  resize: vertical; /* permite agrandar solo hacia abajo */
+  min-height: 100px;
+}
+
 /* Media querys */
 @media screen and (max-width: 800px) {
-  .section, .aside {   
-    width: 100%;
-    padding: 0;
-  }
+
+    section,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 550px) {
-  .navbar {
-    flex-direction: column;  /* apila en columna */
-    align-items: stretch;    /* los enlaces ocupan todo el ancho */
-  }
+    .navbar {
+        flex-direction: column;
+        /* apila en columna */
+        align-items: stretch;
+        /* los enlaces ocupan todo el ancho */
+    }
 
-  .navbar a {
-    width: 100%;             /* cada enlace al 100% */
-  }
+    .navbar a {
+        width: 100%;
+        /* cada enlace al 100% */
+    }
 
-  .picture {
-    width: 100%;
-}
+    .picture {
+        width: 100%;
+    }
 }

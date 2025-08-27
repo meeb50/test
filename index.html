@@ -10,49 +10,81 @@
 
 <body>
 
-
     <header>
-        <div class="header">
-            <h1>Nombres Apellidos</h1>
-            <p>Desarrollador Fullstack</p>
-        </div>
-        <nav class="navbar">
-            <a href="index.html">Proyectos</a>
-            <a href="certificados.html">Certificados</a>
-            <a href="sobremi.html">Acerca de</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
+        <h1>Nombres Apellidos</h1>
+        <p>Desarrollador Fullstack</p>
     </header>
 
+    <nav class="navbar">
+        <a href="index.html">Proyectos</a>
+        <a href="acercade.html">Acerca de</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
 
     <main class="row">
-        <div class="section">
+        <section>
+
             <div class="card">
-                <h2>Acerca de mi</h2>
-                <p class="text-justify">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit officiis fuga accusantium numquam
-                    tenetur consequatur pariatur laborum veritatis quibusdam aut error quasi ipsam, sit ipsa ipsum
-                    aperiam sunt. Voluptates excepturi aut atque assumenda quam expedita, iste deserunt alias inventore
-                    recusandae fugit maiores officia earum accusantium nihil eius molestiae odit voluptas tempora
-                    distinctio. At saepe dolore natus, itaque molestiae voluptatibus magnam alias adipisci quasi tempore
-                    ullam tenetur, perspiciatis minima temporibus eius.
-                </p>
-                <img class="picture" src="img/foto.png" alt="foto">
+                <h2>Proyectos</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Titulo</th>
+                            <th>Descripcion</th>
+                            <th>Enlace</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="img/fake.jpg" alt="proyecto1" width="150">
+                            </td>
+                            <td>Nombre proyecto #1</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consectetur ducimus,
+                                distinctio rerum vero ullam reiciendis eos quidem dignissimos minus!</td>
+                            <td><a href="https://google.com">Ir a</a> </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/fake.jpg" alt="proyecto1" width="150">
+                            </td>
+                            <td>Nombre proyecto #2</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consectetur ducimus,
+                                distinctio rerum vero ullam reiciendis eos quidem dignissimos minus!</td>
+                            <td><a href="https://google.com">Ir a</a> </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/fake.jpg" alt="proyecto1" width="150">
+                            </td>
+                            <td>Nombre proyecto #3</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consectetur ducimus, distinctio rerum vero ullam reiciendis eos quidem dignissimos minus!</td>
+                            <td><a href="https://google.com">Ir a</a> </td>
+                        </tr>
+                                                <tr>
+                            <td>
+                                <img src="img/fake.jpg" alt="proyecto1" width="150">
+                            </td>
+                            <td>Nombre proyecto #4</td>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consectetur ducimus, distinctio rerum vero ullam reiciendis eos quidem dignissimos minus!</td>
+                            <td><a href="https://google.com">Ir a</a> </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+        </section>
 
-
-        </div>
-        <div class="aside">
+        <aside>
             <div class="card">
                 <h3>Contacto</h3>
                 <p class="text-justify">LinkedIn: <a href="https://LinkedIn.com">Usuario</a></p>
                 <p class="text-justify">Github: <a href="https://Github.com">Usuario</a></p>
                 <p class="text-justify">Email: <a href="https://gmail.com">usuario@mail.com</a></p>
-                <p>
-                    <a href="assets/documento.pdf" download="documento.pdf">Descargar CV</a>
-                </p>
+                <a class="btn btn-success" href="assets/documento.pdf" download="documento.pdf">Descargar CV</a>
             </div>
-        </div>
+        </aside>
     </main>
 
     <footer>
